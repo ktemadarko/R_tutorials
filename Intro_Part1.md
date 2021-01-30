@@ -33,7 +33,7 @@ Function
 
 ## Open Rstudio and create new R script
 
-Click create new R script and then click file, save and give the file a name to save the file.
+Click create new R script and then click file, give the file a name to save the file.
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EEC0923C.png)
 
