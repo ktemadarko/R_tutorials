@@ -31,17 +31,17 @@ Function
 
 :   Functions are codes within packages that do specific things.
 
-## Open Rstudio and create new R script
+### Open Rstudio and create new R script
 
 Click create new R script and then click file, give the file a name to save the file.
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EEC0923C.png)
 
-## Part1- Importing and loading the data {.tabset}
+### Part1- Importing and loading the data {.tabset}
 
-### Install and load packages
+#### Install and load packages
 
-#### **Start here**
+##### **Start here**
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EDFDBD4C.png)
 
@@ -53,7 +53,7 @@ x<-c("tidyverse","tidylog", "usethis")
 install.packages(x)
 ```
 
-#### **Explanation of code above**
+##### **Explanation of code above**
 
 -   *x (here is just a variable) you can use any name or alphabet letter as a variable.*
 
@@ -65,7 +65,7 @@ install.packages(x)
 
 <br>
 
-#### **Packages**
+##### **Packages**
 
 Packages are helpful codes others have already written. After you type code, *click Run to run the code.*
 
@@ -88,9 +88,9 @@ library(usethis)
 
 <br>
 
-### Load Data
+#### Load Data
 
-#### **Click import dataset then from readr**
+##### **Click import dataset then from readr**
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-B527F669.png)
 
@@ -100,10 +100,10 @@ library(usethis)
 
 <br>
 
-#### **Check the Environment tab.**
+##### **Check the Environment tab.**
 
 -   You should see vac 38 obs of 4 variables.
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-F898095E.png)
 
-### Shiny
+#### Shiny
