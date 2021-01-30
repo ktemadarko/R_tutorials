@@ -17,7 +17,7 @@ output:
 
 ***This tutorial assumes that R Studio has already been installed and opened.***
 
-## Dictionary
+## New terms
 
 Package
 
