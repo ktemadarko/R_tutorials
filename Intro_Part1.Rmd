@@ -1,0 +1,105 @@
+---
+title: "Introduction to Data Cleaning in R" 
+author: "Ama Owusu-Darko"
+date: "1/30/2021"
+output: 
+  html_document: 
+    theme: united
+    highlight: tango
+    toc: yes
+    toc_float: true
+    keep_md: yes
+    df_print: kable
+    code_download: true
+---
+
+***This tutorial assumes that R Studio has already been installed and opened.***
+
+## Dictionary
+
+Package
+
+:   Packages are helpful codes others have already written.
+
+Library
+
+:   Library is a way to tell R to load a package.
+
+Function
+
+:   Functions are codes within packages that do specific things.
+
+## Open Rstudio and create new R script
+
+Click create new r script and then click file, save and give the file a name to save the file.
+
+![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EEC0923C.png)
+
+## Part1- Importing and loading the data {.tabset}
+
+### Install and load packages
+
+#### **Start here**
+
+![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EDFDBD4C.png)
+
+Copy and run the following codes in the boxes in your R script
+
+```{r one, eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+x<-c("tidyverse","tidylog", "usethis")
+install.packages(x)
+
+```
+
+#### **Explanation of code above**
+
+-   *x (here is just a variable) you can use any name or alphabet letter as a variable.*
+
+-   = or \<- is used to assign or store a value to the variable
+
+-   c( ) makes a vector
+
+-   All text in R are referred to as strings and should be put in single ' ' or double " " quotation marks
+
+<br>
+
+####  **Packages**
+
+Packages are helpful codes others have already written. After you type code, *click Run to run the code.*
+
+<br> ***The packages used in this document**-*
+
+```{r two, message=FALSE, warning=FALSE, include=TRUE}
+library(tidyverse)
+library(tidylog)
+library(usethis)
+```
+
+|  **tidyverse-** Useful for data cleaning
+|  **tidylog-** Useful for analyzing errors when using tidyverse
+| 
+| ***Usually any word that has a bracket after it is a function.***
+|         Functions are codes within packages that do specific things.
+|         Eg. install.packages() is a function
+|               library() is a function
+<br>
+
+### Load Data
+
+#### **Click import dataset then from readr**
+
+![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-B527F669.png)
+
+-   After you click import dataset then from readr then click browse to get the *vaccination performance indicators dataset* from your downloads. In the Name section change the name to vac (vac is going to be name of the variable). Then click Import.
+
+![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-D26D5709.png)
+
+<br>
+
+#### **Check the Environment tab.**
+
+-   You should see vac 38 obs of 4 variables.
+
+![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-F898095E.png)
+
+### Shiny
