@@ -13,6 +13,8 @@ output:
     code_download: true
 ---
 
+
+
 ***This tutorial assumes that R Studio has already been installed and opened.***
 
 ## Dictionary
@@ -63,7 +65,7 @@ install.packages(x)
 
 <br>
 
-####  **Packages**
+#### **Packages**
 
 Packages are helpful codes others have already written. After you type code, *click Run to run the code.*
 
@@ -83,6 +85,7 @@ library(usethis)
 |         Functions are codes within packages that do specific things.
 |         Eg. install.packages() is a function
 |               library() is a function
+
 <br>
 
 ### Load Data
