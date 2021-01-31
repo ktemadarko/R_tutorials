@@ -17,9 +17,32 @@ output:
 usethis::use_git()
 ```
 
-***This tutorial assumes that R Studio has already been installed and opened.***
+### Welcome page
 
-## New terms
+```{r to_do_list, eval=FALSE, include=FALSE}
+Check footnote
+highlight tango
+bookdown
+packages tab
+```
+
+#### **Required Downloads**
+
+-   Download and install R. Preferred version is 4.0 and higher. [Download R version 4.0.3 for Windows here](https://cran.r-project.org/bin/windows/base/ "R verision 4.03 for Windows")[^1]
+
+-   Download and install R studio. Preferred version is 1.4 and higher.[^2]
+
+[^1]: Install and load the installr and updater packages
+
+    `install.packages("installr")` and `library(installr)`
+
+    Then run the function `updateR()` to update your R version.
+
+[^2]: When in R Studio\>Help\> Check for Updates
+
+#### Dictionary
+
+Refer to the Welcome tab for definitions to new words
 
 Package
 
@@ -29,17 +52,19 @@ Library
 
 :   Library is a function that tells R to load a package that you have already installed.
 
-Function
+Function[^3]
 
 :   Functions are codes within packages that do specific things.
 
-### Open Rstudio and create new R script
+[^3]: Example Functions [Example Functions]
+
+### **Open Rstudio and create new R script**
 
 Click create new R script and then click file, give the file a name to save the file.
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-EEC0923C.png)
 
-### Part1- Importing and loading the data {.tabset}
+### **Part1- Importing and loading the data** {.tabset}
 
 #### Install and load packages
 
@@ -63,29 +88,54 @@ install.packages(x)
 
 -   c( ) makes a vector
 
--   All text in R are referred to as strings and should be put in single ' ' or double " " quotation marks
+-   All text in R are referred to as strings[^4] and should be put in single ' ' or double " " quotation marks.
+
+[^4]: Data types in R [Data types in R]
 
 <br>
 
-##### **Packages**
+##### **Required Packages**
 
 Packages are helpful codes others have already written. After you type code, *click Run to run the code.*
 
-<br> ***The packages used in this document**-*
+##### ***The packages used in this document***
+
+Install these packages using the `install.packages("x")`[^5] function. Remember to replace the "x" with the actual package you want to install.
+
+[^5]: hello
+
+##### Example Packages
+
+To install the package knitr type and run `install.packages("knitr")`.
+
+> Make sure you are connect to the internet. Packages are download from the internet thus installing packages without the internet would not work.
+>
+> Otherwise 90% of the functions of R and R studio can be done without using the internet.
 
 ```{r two, message=FALSE, warning=FALSE, include=TRUE}
 library(tidyverse)
 library(tidylog)
 library(usethis)
+library(markdown)
+library(knitr)
+library(DT)
 ```
 
-|  **tidyverse-** Useful for data cleaning
-|  **tidylog-** Useful for analyzing errors when using tidyverse
-| 
-| ***Usually any word that has a bracket after it is a function.***
-|         Functions are codes within packages that do specific things.
-|         Eg. install.packages() is a function
-|               library() is a function
+##### **tidyverse-**
+
+Useful for data cleaning
+
+##### **tidylog-** 
+
+Useful for analyzing errors when using tidyverse
+
+***Usually any word that has a bracket after it is a function.***
+
+Functions are codes within packages that do specific things.
+
+##### **Example Functions** 
+
+`install.packages()` is a function that downloads and installs packages from R. `library()` is also a function.
 
 <br>
 
@@ -106,5 +156,7 @@ library(usethis)
 -   You should see vac 38 obs of 4 variables.
 
 ![](C:/Users/hp/AppData/Local/RStudio/tmp/paste-F898095E.png)
+
+#### Data types in R
 
 #### Shiny
